@@ -1,6 +1,7 @@
 LanchesVpsa::Application.routes.draw do
   resources :lanches
 
+  root :to => 'lanches#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -46,4 +46,11 @@ class LanchesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # GET /lanches/menu
+  def menu
+    respond_to do |format|
+      format.html # menu.html.erb
+    end
+  end
 end

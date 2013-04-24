@@ -1,5 +1,8 @@
 LanchesVpsa::Application.routes.draw do
+  match 'lanches/menu' => 'lanches#menu'
+
   resources :lanches
+ 
 
   root :to => 'lanches#index'
 
